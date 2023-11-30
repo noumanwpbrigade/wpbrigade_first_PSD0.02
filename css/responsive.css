@@ -1,0 +1,817 @@
+
+
+/* --------------
+
+    >> Required Media Query's
+     > 769px to 1324px for laptop 1024px to laptop L 
+     > Tablet - 768px
+     > mobile - 375px
+
+-----------------*/
+
+@media screen and (max-width: 1324px) {
+    /* navbar */
+    .nav-links {
+        width: 80%;
+    }
+    .search-bar {
+        width: 18%;  
+    }
+
+    
+}
+/* -----------------------
+    Brake Point 1024px
+--------------------------*/
+@media screen and (max-width: 1024px){
+
+    .search-input-type {
+        width: 90px;
+    }
+
+    
+}
+
+/* -----------------------
+    Tablet - 768px ;
+---------------------------*/
+@media screen and (max-width: 790px) {
+
+    /* navbar */
+    .no-skew{
+        width: auto;
+        font-size: 11px;
+        font-weight: bolder;
+
+        padding: 0 8px;
+    }
+    .nav-links {
+        width: 70%;
+    }
+    .search-bar {
+        width: 170px;
+    }
+
+    .nav-container form {
+        width: 170px;
+    }
+    .nav-container form input {
+        width: 100px;
+    }
+
+    /* hero */
+
+    .hero-content-l h2 {
+        font-size: 28px;
+    }
+    .hero-content-l p {
+        font-size: 16px;
+    }
+
+    
+    /* cards */
+    .card {
+        width: 48%;
+    }
+
+    /* zig-zag section */
+    
+
+    .zig-zag-img-1, .zig-zag-img-2 {
+        height: 306px;
+    }
+    .zig-zag-img-2 {
+        right: -15% ;
+    }
+
+    /* cta */
+    .cta-form {
+        width: 90%;
+
+        position: relative;
+        margin-left: 0px;
+    }
+    .form-right-spacer {
+        display: none;
+    }
+
+
+    /* second slider */ /* at last becasue of it's complexity */
+    .second-slider-img:first-child {
+        display: none;
+
+    }
+    .second-slider-img {
+        width: 32%;
+    }
+    
+    
+}
+
+/* -----------------------
+    mobile - max-width:425px;
+---------------------------*/
+
+@media screen and (max-width: 425px) {
+    /* resets */
+    :root {
+        --padding-line: 5px ;
+    }
+    
+
+    /* typo-sizes */
+    h1 {
+        font-size: 20px ;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+
+    .cta-h2 {
+        font-size: 19px;
+    }
+    /* top sms */
+    .top-sms {
+        width: 90%;
+    }
+
+    .logo {
+        padding-left: 15px !important;
+    }
+    
+
+    /* homepage/reebok */
+    .homepage-nav {
+        display: none;
+    }
+
+    /*----------------------------
+        navigation start
+    ------------------------------*/
+
+    .burger-parent {
+        width: 100%;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+    .burger {
+        display:block;
+        padding-right: 5px;
+     }
+
+     .top-nav {
+        flex-direction: column;
+
+        margin: 0px;
+        padding: 0px;
+     }
+     #top-nav {
+        width: 100vw;
+        padding: 10px 0 0 0 ;
+        background-image: url(../assets/pattern-bg.png);
+        background-size: cover;
+        background-color: var(--bg-dark-color);
+     }
+    
+    #top-nav .container {
+        /* max-width: 1180px; */
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+     .buttons {
+        width: 100%;
+        gap: 0px;
+
+        margin: 0px;
+    }
+
+    .btn-primary, .btn-secondary {  
+        width: 50%; 
+        
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }    
+    
+    .btn-secondary{
+        border-left: 2px solid #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .btn-primary {
+        padding-right: 40px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    
+
+    /* this styling not working */
+    .buttons a p {
+        transform: skew( 0deg);
+
+        font-size: 16px;
+    }
+ 
+    /* ------------
+    nav links
+    -------------*/
+
+    .nav-container {
+        padding-block: 20px;
+        flex-direction: column-reverse;
+
+        position: relative;
+    }
+
+    form.search-bar {
+        width: 85% !important;
+        padding-block: 10px !important;
+
+        font-weight: 900;
+        color: white;
+    }
+
+    .nav-links {
+        width: 100%;
+        
+        flex-direction: column;
+        padding-block: 20px;
+        padding-inline: 0px;
+
+        justify-content: start !important;        
+    }
+
+    .hover-links {
+        position: relative;
+        left: -100;    
+    }
+    #nav {
+        transition: all 1s linear;
+    }
+    
+    #nav.active {
+        display: none;
+
+        transition: all 1s linear;
+    }
+
+    /* for transition */
+    #nav.with-transition {
+        transition: all 1s linear;
+    }
+
+    .p-start {
+        width: 200px;
+
+        position: relative;
+        left: -20%;
+    }
+
+
+
+    /*----------------------------
+        navigation end
+    ------------------------------*/
+
+    /* hero section  */
+    #hero-item {
+        flex-direction: column-reverse;
+    }
+    .hero-content-l {
+        width: 100%;
+        padding: 0px 15px;
+    }
+    #hero-right {
+        width: 250px !important;
+    }
+
+    .owl-next, .owl-prev {
+        display: none !important;
+    }
+
+    h2.color-primary {
+        font-size: 28px;
+    }
+
+    /* main */
+    .main .container {
+        flex-direction: column;
+    }
+
+    .main-main {
+        width: 100%;
+    }
+
+    .side-bar {
+        margin-top: 20px;
+        width: 100% !important;
+    }
+    /* cards */
+    .card {
+        width: 100%;
+    }
+    .card-title {
+        font-size: 24px;
+    }
+
+    /* zig-zag box */
+    .zig-zag-box {
+        margin-top: 30px;
+        padding-inline: 0px;
+        width: 100%;  
+
+
+        margin-left: 1px;
+    }
+    .zig-zag-1 {
+        flex-direction: column;
+    }
+
+    .zig-zag-img-1 {
+        width: 100%;
+        height: 250px;
+    
+        background-image: url(../assets/zig-zag-img-1.png);
+        background-size: cover;
+        background-position: center;
+    
+    
+        transform: skewX(0deg);
+        position: relative;
+        left: 0%;
+    }
+
+    .zig-zag-content {
+        width: 100%;
+
+        padding-block: 15px;
+    }
+    .zig-zag-content .card-title, .zig-zag-content .card-text {
+        text-align: left;
+    }
+
+    .zig-zag-2 {
+        flex-direction: column-reverse;
+    }
+
+    
+    .zig-zag-img-2 {
+        width: 100%;
+        height: 250px;
+
+        background-image: url(../assets/zig-zag-img-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        transform: skew(0deg);
+        position: relative;
+        right: 0%;
+    
+    }
+
+
+    /* CTA section */
+
+    .cta-form {
+        width: 100%;
+        height: auto;
+        
+
+        /* why without these 2-line notwork */
+        position: relative;
+        left: 15px;
+
+    }
+    
+    .form-right-spacer {
+        display: none;
+    }
+
+    .input-gp {
+        flex-direction: column;
+    }
+
+    .input-1, .input-2 {
+        width: 100%;
+    }
+
+    .radio input[type="radio"] {
+        width: 15px; 
+        height: 15px;
+    }
+
+    .radio + .radio {
+        margin-left: 10px;
+    }
+
+    .radio label {    /* for vertical label center */
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 500px;
+        padding: 10px;
+    
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+
+
+
+    /* footer */
+
+
+
+
+    /* second slider */ /* at last becasue of it's complexity */
+    .second-slider-img {
+        display: block;
+    }
+    
+    .second-slider-img:first-child {
+        width: 98%;
+        display: block;
+    }
+    
+    
+}
+
+/* ----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+    for 576px because of responsive issues
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 576px) {
+    /* resets */
+    :root {
+        --padding-line: 5px ;
+    }
+    
+
+    /* typo-sizes */
+    h1 {
+        font-size: 20px ;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+
+    .cta-h2 {
+        font-size: 19px;
+    }
+    /* top sms */
+    .top-sms {
+        width: 90%;
+    }
+
+    .logo {
+        padding-left: 15px !important;
+    }
+    
+
+    /* homepage/reebok */
+    .homepage-nav {
+        display: none;
+    }
+
+    /*----------------------------
+        navigation start
+    ------------------------------*/
+
+    .burger-parent {
+        width: 100%;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+    .burger {
+        display:block;
+     }
+
+     .top-nav {
+        flex-direction: column;
+
+        margin: 0px;
+        padding: 0px;
+     }
+     #top-nav {
+        width: 100vw;
+        padding: 10px 0 0 0 ;
+        background-image: url(../assets/pattern-bg.png);
+        background-size: cover;
+        background-color: var(--bg-dark-color);
+     }
+    
+    #top-nav .container {
+        /* max-width: 1180px; */
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+     .buttons {
+        width: 100%;
+        gap: 0px;
+
+        margin: 0px;
+    }
+
+    .btn-primary, .btn-secondary {  
+        width: 100%; 
+        transform: skew(0deg);
+        margin-inline: -20px ; /* to remove gap b/t buttons  */
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }    
+    .no-skew {
+        font-size: 14px;
+    }
+    
+    
+    .btn-secondary{
+        border-left: 2px solid #fff;
+    }
+    
+    
+
+    /* this styling not working */
+    .buttons a p {
+        transform: skew( 0deg);
+
+        font-size: 16px;
+    }
+ 
+    /* ------------
+    nav links
+    -------------*/
+
+    .nav-container {
+        padding-block: 20px;
+        flex-direction: column-reverse;
+
+        position: relative;
+    }
+
+    form.search-bar {
+        width: 100%;
+        padding-block: 5px;
+
+        font-weight: 900;
+        color: white;
+    }
+
+    .nav-links {
+        width: 100%;
+        
+        flex-direction: column;
+        padding-block: 20px;
+        padding-inline: 0px;
+
+        justify-content: start !important;
+
+
+
+        
+    }
+
+    .hover-links {
+        position: relative;
+        left: -100;
+        
+    }
+    #nav {
+        transition: all 1s linear;
+    }
+    
+    #nav.active {
+        display: none;
+
+        transition: all 1s linear;
+    }
+
+    /* for transition */
+    #nav.with-transition {
+        transition: all 1s linear;
+    }
+
+    /* typo */
+    a .no-skew {
+        /* letter-spacing: 2px; */
+    }
+
+
+
+    /*----------------------------
+        navigation end
+    ------------------------------*/
+
+    /* hero section  */
+    #hero-item {
+        flex-direction: column-reverse;
+    }
+    .hero-content-l {
+        width: 100%;
+    }
+    #hero-right {
+        width: 100%;
+    }
+
+    .owl-next, .owl-prev {
+        display: none !important;
+    }
+
+    /* main */
+    .main .container {
+        flex-direction: column;
+    }
+
+    .main-main {
+        width: 100%;
+    }
+
+    .side-bar {
+        margin-top: 20px;
+        width: 100% !important;
+    }
+    /* cards */
+    .card {
+        width: 100%;
+    }
+
+    /* zig-zag box */
+    .zig-zag-box {
+        margin-top: 30px;
+        padding-inline: 0px;
+        width: 100%;  
+
+
+        margin-left: 1px;
+    }
+    .zig-zag-1 {
+        flex-direction: column;
+    }
+
+    .zig-zag-img-1 {
+        width: 100%;
+        height: 250px;
+    
+        background-image: url(../assets/zig-zag-img-1.png);
+        background-size: cover;
+        background-position: center;
+    
+    
+        transform: skewX(0deg);
+        position: relative;
+        left: 0%;
+    }
+
+    .zig-zag-content {
+        width: 100%;
+
+        padding-block: 15px;
+    }
+    .zig-zag-content .card-title, .zig-zag-content .card-text {
+        text-align: left;
+    }
+
+    .zig-zag-2 {
+        flex-direction: column-reverse;
+    }
+
+    
+    .zig-zag-img-2 {
+        width: 100%;
+        height: 250px;
+
+        background-image: url(../assets/zig-zag-img-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        transform: skew(0deg);
+        position: relative;
+        right: 0%;
+    
+    }
+
+
+    /* CTA section */
+
+    .cta-form {
+        width: 100%;
+        height: auto;
+        
+
+        /* why without these 2-line notwork */
+        position: relative;
+        margin-left: 0px;
+    }
+    
+    .form-right-spacer {
+        display: none;
+    }
+
+    .input-gp {
+        flex-direction: column;
+    }
+
+    .input-1, .input-2 {
+        width: 100%;
+    }
+
+    .radio input[type="radio"] {
+        width: 15px; 
+        height: 15px;
+    }
+
+    .radio + .radio {
+        margin-left: 10px;
+    }
+
+    .radio label {    /* for vertical label center */
+        position: relative;
+        top: -5px;
+        padding: 0px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100px;
+        padding: 10px;
+    
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+
+
+
+    /* footer */
+
+
+
+
+    /* second slider */ /* at last becasue of it's complexity */
+    .second-slider-img {
+        display: none;
+
+    }
+    
+    .second-slider-img:first-child {
+        width: 98%;
+        display: block;
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width: 578px) {
+    .radio input[type="radio"] {
+        width: 20px; 
+        height: 20px;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 791px) and (max-width: 934px) {
+
+    .nav-links {
+        width: 90%;
+    }
+
+    .no-skew{
+        transform: skew(20deg);
+        padding: 0 16px;
+    }
+
+    
+    .search-input-type {
+        width: 100px;
+    }
+}
