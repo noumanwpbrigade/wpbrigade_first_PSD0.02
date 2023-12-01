@@ -445,6 +445,7 @@ hr {
 .card-box {
     gap: 10px;
     flex-wrap: wrap;
+    align-items: start;
 
 }
 
@@ -515,7 +516,7 @@ hr {
     margin-left: -10px; /* to achive left imaginary line */
     padding-inline: 10px;
 
-    width: 99.5%;  /* to achive rifht imaginary line */
+    width: 101%;  /* to achive rifht imaginary line */
 }
 .zig-zag-1 {
     background-color: var(--bg-light-color);
@@ -528,7 +529,7 @@ hr {
 }
 
 .zig-zag-img-1 {
-    width: 65%;
+    width: 60%;
     height: 250px;
 
     background-image: url(../assets/zig-zag-img-1.png);
@@ -543,7 +544,7 @@ hr {
 }
 
 .zig-zag-content {
-    width: 30%;
+    width: 40%;
 
     padding-inline: 5px ;
     text-align: center;
@@ -577,8 +578,7 @@ hr {
 /* side-bar */
 
 .side-bar {
-    /* max-width: 265px; */
-
+    width: 300px;
     height: auto;
     background-color: var(--bg-light-color);
     background-image: url('../assets/pattern-bg.png');
@@ -758,6 +758,9 @@ label, .gen-bold {
     background-color: var(--bg-accent-color);
 }
 
+label, .gen-bold {
+    cursor: pointer;
+}
 
 /* ------------------
     footer
@@ -799,30 +802,13 @@ footer {
 }
 
 .icon:hover {
-    transform: scale(2);
+    opacity: 0.6;
 }
 
 .copyright {
     font-size: 16px;
     padding-bottom: 30px;
     cursor: pointer;
-}
-
-
-
-.copyright::before {    
-    content: " ";
-    position: absolute;
-    bottom: 25px;
-    height: 3px;
-    border-radius: 50px;
-    width: 0%;
-    background-color: white;
-    transition: width 0.3s linear;
-}
-
-.copyright:hover::before {
-    width: 150px;
 }
 
 /* ----------------
