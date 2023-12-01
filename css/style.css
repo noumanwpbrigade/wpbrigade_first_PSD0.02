@@ -830,7 +830,7 @@ footer {
 -------------------*/
 
 
-select.classic {
+select.drop-down {
     background-image:url('../assets/dropdown-arrow.png');
     background-position:
       calc(100% - 20px) calc(1em + 2px),
