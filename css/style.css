@@ -524,13 +524,14 @@ hr {
     background-size: cover;
 
     overflow: hidden;
+    align-items:stretch;
 
     position: relative;
+
 }
 
 .zig-zag-img-1 {
     width: 60%;
-    height: 250px;
 
     background-image: url(../assets/zig-zag-img-1.png);
     background-size: cover;
@@ -546,7 +547,7 @@ hr {
 .zig-zag-content {
     width: 40%;
 
-    padding-inline: 5px ;
+    padding: 20px 5px 0px ;
     text-align: center;
 }
 .zig-zag-content .card-title, .zig-zag-content .card-text {
@@ -558,13 +559,13 @@ hr {
     background-image: url('../assets/pattern-bg.png');
     background-size: cover;
 
+    align-items: stretch;
     overflow: hidden; 
 }
 
 
 .zig-zag-img-2 {
     width: 65%;
-    height: 250px;
     background-image: url(../assets/zig-zag-img-2.png);
     background-size: cover;
     background-repeat: no-repeat;
